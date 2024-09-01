@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <title>Index</title>
+
+    <style>
+      body {
+        background-color: ivory;
+      }
+      .navbar {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        font-size: larger;
+      }
+      .navbar-brand {
+        font-family: "Cinzel Decorative", cursive;
+        color: burlywood;
+        font-size: 40px;
+      }
+      .navbar ul a {
+        font-size: 20px;
+        margin: 5px;
+      }
+      .custom-navbar {
+        margin-left: auto;
+      }
+      #carouselExampleDark {
+        /*  margin-left: 20px;
+        margin-right: 20px;  */
+        margin-top: 90px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+      }
+
+      #carouselExampleDark h2 {
+        font-family: "Playfair Display", serif;
+        color: azure;
+        font-weight: bolder;
+      }
+      #carouselExampleDark p {
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        font-size: larger;
+        color: azure;
+      }
+      #heading {
+        font-weight: bolder;
+
+        font-family: "Playfair Display", serif;
+        margin: 50px;
+        text-align: center;
+      }
+      /*     .card {
+        margin: 40px;
+      }
+
+      */
+      .card-img-top {
+        height: 200px;
+      }
+      .jumbotron {
+        padding-left: 30px;
+        width: 800px;
+
+        height: 300px;
+      }
+      .mason {
+        /*  border: 1px solid #ccc;*/
+      }
+      .col {
+        /*  border: 1px solid #ccc;*/
+      }
+
+      .corners {
+        height: 220px;
+      }
+      .corners img {
+        height: 200px;
+        width: 600px;
+      }
+
+      .hqhq {
+      }
+      .hqhq img {
+        /*  margin-top: 0px !important; */
+
+        height: 250px;
+      }
+
+      .mdlleft {
+        padding-top: 0px !important;
+        /*  border: 1px solid #ccc; */
+        /*  margin-top: 10px;  */
+        width: 265px !important;
+
+        top: 0;
+        /*  margin-left: 0px !important;
+        margin-right: 0px !important;  */
+        padding-bottom: 0px !important;
+      }
+      .mdlright {
+        /*  border: 1px solid #ccc; */
+        width: 265px !important;
+        /* margin-left: 0px !important;
+        margin-right: 0px !important; */
+        padding-bottom: 0px !important;
+      }
+      .mdlleft img {
+        width: 100%;
+        height: 385px;
+      }
+      .mdlright img {
+        width: 100%;
+        height: 385px;
+      }
+      .centr {
+        /*  border: 1px solid #ccc; */
+        margin-top: 50px;
+        height: 400px;
+        width: auto !important;
+
+        margin-bottom: 0% !important;
+      }
+      .centr img {
+        width: 100%;
+        width: 580px !important;
+        height: 340px;
+      }
+
+      .bm {
+        /*  border: 1px solid #ccc; */
+        margin-top: 0px !important;
+      }
+      .bm img {
+        width: 100%;
+        margin-top: 0%;
+        height: 250px;
+      }
+
+      .cornersbtm {
+        margin-top: 50px !important;
+        margin-bottom: 0px !important;
+        height: 220px;
+      }
+      .cornersbtm img {
+        width: 100%;
+        height: 200px;
+        width: 600px;
+      }
+      .brick:hover img {
+        filter: blur(1.1px);
+      }
+      .caption {
+        position: relative;
+        font-family: "Playfair Display", serif;
+        overflow: hidden; /* Ensures the underline stays within the caption */
+        margin-bottom: 3px;
+      }
+
+      .caption::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px; /* Adjust the height of the underline as needed */
+        background-color: rgba(0, 0, 0, 0.3); /* Light-lined underline color */
+        transition: width 0.5s ease-in-out; /* Adjust the transition timing as needed */
+      }
+
+      .brick:hover .caption::before {
+        width: 100%; /* Makes the underline cover the whole caption */
+      }
+      .card {
+        border: none;
+        background-color: ivory;
+        max-width: 260px;
+        margin: 40px;
+        transition: box-shadow 0.4s ease;
+      }
+
+      .card-body {
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card:hover {
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Adjust the shadow values as needed */
+        background-color: ivory;
+        border: 0.1px solid #ccc;
+      }
+
+        .btn{
+        background-color: #4963A0;
+          color:whitesmoke;
+        }
+    .btn:hover{
+  background-color: darkblue;
+  color:white;
+
+     }
+    .r {
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        height: 350px;
+        margin: 15px;
+        width: 350px;
+        background-color: peachpuff;
+        margin-block-start: 15px;
+        margin-right: 30px;
+      }
+      .explore{
+        font-family: 'bentonsansregular-9dec16c39f';
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="pics/oudlogo.png" alt="logo" height="65px" width="70px" />
+          Arabian Oud</a
+        >
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-label="Expand Navigation"
+        >
+          <div class="navbar-toggler-icon"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav custom-navbar">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link active"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="store.html" class="nav-link"> Store </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link"> About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contactus.html" class="nav-link"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- fst-italic -->
+    <!-- <div class="container" id="heading">    
+      
+      <h1>The Aroma of Oud brought to your home</h1>
+    </div> -->
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <!--10000-->
+          <img
+            src="pics/oils/DeWatermark.ai_1712133692801.png"
+            class="d-block w-100 img-fluid"
+            alt="..."
+            height="300px"
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h2>OUD OILS</h2>
+            <p>
+              Immerse yourself in the allure of our exquisite Oud Oils, crafted
+              with precision and passion. Elevate your senses with the timeless
+              essence of this aromatic treasure.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="pics/AdobeStock_196984492_Preview.jpeg"
+            class="d-block w-100 img-fluid"
+            alt="..."
+            height="300px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>OUD BAKHOOR</h2>
+            <p>
+              Indulge in the captivating dance of fragrance with our Oud Bakhoor
+              collection. Let the subtle smokiness and rich oud notes create an
+              ambiance of warmth and sophistication.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="pics/perfumes/DeWatermark.ai_1712133660826.png"
+            class="d-block w-100 img-fluid"
+            alt="..."
+            height="300px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>OUD PERFUMES</h2>
+            <p>
+              Embark on a journey of opulence with our Oud Perfumes, where every
+              drop tells a tale of luxury. Unleash the power of fragrance and
+              make a lasting impression.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="jumbotron ms-5 me-5 mb-5 container">
+      <h3 class="display-5 fw-semibold">Welcome to the world of Oud</h3>
+      <p class="lead">Standing out is easy, all it takes is a good scent.</p>
+      <hr class="my-4" />
+      <p>We would help you to choose your own perfume.</p>
+      <a class="btn btn-secondary btn-lg" href="store.html" role="button"
+        >Visit Store</a
+      >
+    </div>
+
+    <div class="container mt-4 mason">
+      <div
+        class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 d-flex justify-content-center"
+      >
+        <!-- Add your image and caption elements here -->
+        <div class="col corners">
+          <div class="brick">
+            <img
+              src="pics/AdobeStock_745160767_Preview.jpeg"
+              alt="Caption 1"
+              class="img-fluid"
+            />
+            <h5 class="caption mt-1">
+              Discover the allure of tradition with our authentic bakhoor
+            </h5>
+            <!-- <h5 class="card-title pb-2 mbr-fonts-style fw-lighter">FASHION</h5> -->
+          </div>
+        </div>
+
+        <div class="col hqhq d-flex justify-content-center">
+          <div class="brick">
+            <img
+              src="pics/mason/AdobeStock_552679291_Preview.jpeg"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <!-- <p class="caption">Caption 2</p> -->
+          </div>
+        </div>
+
+        <div class="col corners">
+          <div class="brick">
+            <img
+              src="pics/mason/AdobeStock_157144819_Preview.jpeg"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <h5 class="caption mt-1" style="text-align: end">
+              Awaken your senses to the richness of Oud and bakhoor
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-3 mdlleft">
+          <div class="brick">
+            <img
+              src=" pics/mason/AdobeStock_715577084_Preview.jpeg"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <h5 class="caption mt-1 text-center">Enchanting Aromas</h5>
+          </div>
+        </div>
+
+        <div class="col-6 centr">
+          <div class="brick">
+            <img
+              src="pics/AdobeStock_703865131_Preview.jpeg "
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <!-- <h5 class="caption mt-1 text-center">Variety of Incense Burners</h5> -->
+          </div>
+        </div>
+
+        <div class="col-3 mdlright">
+          <div class="brick">
+            <img
+              src="pics/download (7)d.png"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <h5 class="caption mt-1 text-center">Exclusive Fragrances</h5>
+          </div>
+        </div>
+
+        <div class="col cornersbtm">
+          <div class="brick">
+            <img
+              src="pics/oils/DeWatermark.ai_1713380651704.png"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <h5 class="caption mt-1">Opulent Notes</h5>
+          </div>
+        </div>
+
+        <div class="col bm">
+          <div class="brick">
+            <img
+              src="pics/AdobeStock_715594319_Preview.jpeg"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="col cornersbtm">
+          <div class="brick">
+            <img
+              src="pics/oils/240_F_203773123_7xas1FYYN1M63h3zSH3to6mCnk1SvGKs.jpg"
+              alt="Caption 2"
+              class="img-fluid"
+            />
+            <!-- pics/Woody_collection.jpg -->
+            <h5 class="caption mt-1 text-end">Oriental Scents</h5>
+          </div>
+        </div>
+        <!-- Add more bricks as needed -->
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br /><br /><br />
+
+    <div
+      class="bestsellers d-flex justify-content-start text-align-center flex-wrap"
+    >
+    <!-- <img src="pics/—Pngtree—simple dividing line decoration cartoon_3910348.png" height="150px" width="300px"> -->
+      <h1 class="container text-center explore" style="margin-left: 90px">
+        <span class="me-3"> <i class="bi bi-flower1"></i>  </span>
+       Explore Our Best-Sellers  <span class="ms-3">  <i class="bi bi-flower1"></i> </span>
+      </h1>
+      <!-- Product Cards -->
+
+      <!-- <div class="card me-0" style="width: 15rem">
+        <img
+          src="pics/AdobeStock_181095222_Preview.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img
+          src="pics/image_fx_attar_oud_perfume_image_950_px_width__530px.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img src="pics/download (10).png" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img src="pics/download (16).png" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img
+          src="pics/AdobeStock_656997563_Preview.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img
+          src="pics/AdobeStock_517533453_Preview.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img src="pics/bakhoor.jpg" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card me-0" style="width: 15rem">
+        <img src="pics/muskpink.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
+
+      <!--add more-->
+    </div>
+
+    <div class="container-fluid">
+      <h2
+        class="text-center fw-bold"
+        style="font-family: 'Arial', sans-serif; color: #333; margin-top: 50px"
+      >
+        Customer Reviews
+      </h2>
+
+      <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+        <div class="col r text-center pt-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="currentColor"
+            class="bi bi-chat-square-quote"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
+            />
+          </svg>
+          <br /><br />
+          <br />
+          <p
+            class="fw-bold"
+            style="font-size: 16px; font-style: italic; color: #555"
+          >
+            "Absolutely stunning fragrances! I am in love with the rich and
+            captivating scents . Each perfume is a masterpiece."
+          </p>
+          <p style="font-size: 14px; font-weight: bold; color: #333">
+            - Arsalan M.
+          </p>
+        </div>
+
+        <div class="col r text-center pt-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="currentColor"
+            class="bi bi-chat-square-quote"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
+            />
+          </svg>
+          <br /><br />
+          <br />
+          <p
+            class="fw-bold"
+            style="font-size: 16px; font-style: italic; color: #555"
+          >
+            "Exquisite craftsmanship! The oud oils are of exceptional quality
+            and have a long-lasting fragrance. Highly recommended!"
+          </p>
+          <p style="font-size: 14px; font-weight: bold; color: #333">
+            - Hamdan
+          </p>
+        </div>
+
+        <div class="col r text-center pt-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="currentColor"
+            class="bi bi-chat-square-quote"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"
+            />
+          </svg>
+          <br /><br />
+          <br />
+          <p
+            class="fw-bold"
+            style="font-size: 16px; font-style: italic; color: #555"
+          >
+            "Unmatched elegance! The packaging and presentation of the products
+            are top-notch. Arabian Oud never fails to impress."
+          </p>
+          <p style="font-size: 14px; font-weight: bold; color: #333">
+            - Rahul Singh
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br />
+
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 ms-2">
+            <h4>
+              <a href="aboutus.html" style="text-decoration: none; color: white"
+                >About Us</a
+              >
+            </h4>
+            <p>
+              Discover exquisite Arabian Oud fragrances at Arabian Oud. With a
+              commitment to quality and elegance, we bring you an exclusive
+              range of oud oils, perfumes, and more, crafted with precision and
+              care. Experience luxury, elegance, and timeless scents like never
+              before with Arabian Oud
+            </p>
+          </div>
+
+          <div class="col-md-3 ms-2">
+            <h4>
+              <a
+                href="contactus.html"
+                style="text-decoration: none; color: white"
+                >Contact Us</a
+              >
+            </h4>
+            <ul class="list-unstyled">
+              <li class="mb-1">Email: bilalahmad9875@gmail.com</li>
+              <li class="mb-1">Phone: +91-7895224673</li>
+              <li class="mb-1">Address: Marris Road, Aligarh , UP</li>
+            </ul>
+          </div>
+          <div class="col-md-3 ms-2">
+            <h4>Follow Us</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/"
+                  style="text-decoration: none; color: rgb(24, 119, 242)"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com/"
+                  style="text-decoration: none; color: rgb(29 161 242)"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/"
+                  style="text-decoration: none; color: rgb(193, 53, 132)"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://in.linkedin.com/"
+                  style="text-decoration: none; color: rgb(0, 119, 181)"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- #2f55a4 -->
+          <hr />
+          <div class="text-center">
+            <p>&copy; 2024 Arabian Oud. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const productArray = [
+        {
+          id: 1,
+          name: "Musk",
+          description: "Sticky Musk , long lasting notes ,light fragrance ",
+          price: "₹2000",
+          previousprice: "₹3000",
+          category: "oil",
+          image: "pics/AdobeStock_552679291_Preview.jpeg",
+        },
+        {
+          id: 2,
+          name: "Oud Malaki",
+          description: "Royal Oud takes you back to the Arabian knights",
+          price: "₹2000",
+          previousprice: "₹3000",
+          category: "oil",
+          image:
+            "pics/image_fx_attar_oud_oil_image__950_px_width__530px_he (5).jpg",
+        },
+
+        {
+          id: 3,
+          name: "Musk Rose Pink",
+          description: "Royal Musk takes you back to the Arabian knights",
+          Sub: "bestseller",
+          price: "₹1000",
+          previousprice: "₹2000",
+          category: "oil",
+          image: "pics/oils/muskpink.jpeg",
+        },
+        {
+          id: 4,
+          name: "Rose Oil",
+          description:
+            "Experience the timeless elegance of Rose with this exquisite scent ",
+          price: "₹750",
+          previousprice: "₹1000",
+          category: "oil",
+          image:
+            "pics/oils/image_fx_attar_oud_oil_image__950_px_width__530px_he.jpg",
+        },
+
+        {
+          id: 5,
+          name: "Oud Cambodi",
+          description: "Exotic Cambodian oud with deep woody tones",
+          Sub: "bestseller",
+          price: "₹2500",
+          category: "oil",
+          previousprice: "₹3000",
+          image: "pics/oils/AdobeStock_196059371_Preview.jpeg",
+        },
+        {
+          id: 6,
+          name: "Oud Saffron",
+          description:
+            "Luxurious saffron-infused oud for a rich fragrance experience",
+          price: "₹2200",
+          previousprice: "₹3500",
+          category: "oil",
+          image: "pics/oils/banner4.jpeg",
+        },
+        {
+          id: 7,
+          name: "Oud Rose",
+          description:
+            "Elegant blend of oud and rose petals for a floral oud scent",
+          price: "₹2300",
+          previousprice: "₹3600",
+          category: "oil",
+          image:
+            "pics/oils/240_F_234927522_Ej2COntDR8MjCSUJGFHm6qdLpn2Qxqe1.jpg",
+        },
+        {
+          id: 8,
+          name: "Oud Amber",
+          description:
+            "Warm amber notes combined with oud for a captivating aroma",
+          price: "₹2400",
+          previousprice: "₹3000",
+          category: "oil",
+          image:
+            "pics/oils/image_fx_attar_oud_perfume_banner_image_landscape_mod.jpg",
+        },
+        {
+          id: 9,
+          name: "Oud Vanilla",
+          description:
+            "Vanilla-infused oud with a sweet and comforting fragrance",
+          price: "₹2100",
+          previousprice: "₹3000",
+          category: "oil",
+          image: "pics/oils/AdobeStock_235631572_Preview.jpeg",
+        },
+        {
+          id: 10,
+          name: "Dehn Al Oud Hindi",
+          description:
+            "Rich and aromatic fragrance crafted from the finest Hindi Oud Wood",
+          price: "₹2000",
+          previousprice: "₹3000",
+          category: "oil",
+          image: "pics/oils/DeWatermark.ai_1712134307112.png",
+        },
+
+        {
+          id: 11,
+          name: "Madinah Musk",
+          description:
+            "Luxurious French oils mixed with roses and drops of Zamzam water",
+          price: "₹1300",
+          previousprice: "₹3000",
+          category: "oil",
+          image: "pics/oils/MADINAH MUSK.jpg",
+        },
+        {
+          id: 12,
+          name: "Kashab Al Oud",
+          description:
+            "A captivating blend of rich woody notes, deep earthy tones, and a hint of musk",
+          category: "oil",
+          price: "₹1500",
+          previousprice: "₹3000",
+          image:
+            "pics/oils/240_F_203773123_7xas1FYYN1M63h3zSH3to6mCnk1SvGKs.jpg",
+        },
+        {
+          id: 13,
+          name: "Mukhallat Oud",
+          description:
+            "The strongest type of Oud, makes your scent luxurious and authentic ",
+          Sub: "bestseller",
+          category: "oil",
+          price: "₹1300",
+          previousprice: "₹3000",
+          image: "pics/AdobeStock_181095222_Preview.jpeg",
+        },
+        {
+          id: 14,
+          name: "Madawi",
+          description:
+            "The aromatic bouquet of fruits, base of roses, patchouli and musk",
+          category: "oil",
+          price: "₹3000",
+          previousprice: "₹3000",
+          image:
+            "pics/oils/image_fx_attar_oud_perfume_image_950_px_width__530px (2).jpg",
+        },
+        {
+          id: 15,
+          name: "Amber Zamzam",
+          description:
+            "Oil with the luxury of musk added to it drops of Zamzam water.",
+          category: "oil",
+          price: "₹1400",
+          previousprice: "₹3000",
+          image: "pics/oils/amber zamazam.jpeg",
+        },
+        {
+          id: 16,
+          name: "Bakhoor Ahmad",
+          description:
+            " Smoky woodiness of the scent, the warm amber, incense, and sandalwood ",
+          Sub: "bestseller",
+          category: "bakhoor",
+          price: "₹1000",
+          previousprice: "₹3000",
+          image: "pics/Bakhoor/AdobeStock_517533453_Preview.jpeg",
+        },
+        {
+          id: 17,
+          name: "Indian Oud Wood",
+          description:
+            "Derived from the resinous heartwood of agarwood trees native to India",
+          category: "bakhoor",
+          price: "₹2000",
+          previousprice: "₹3000",
+          image: "pics/Bakhoor/AdobeStock_517533399_Preview.jpeg",
+        },
+        {
+          id: 18,
+          name: "Cambodian Wood",
+          description:
+            "Wood from the heart of Cambodia, rich in terpenes and fragrance",
+          category: "bakhoor",
+          price: "₹2500",
+          previousprice: "₹3000",
+          image: "pics/Bakhoor/AdobeStock_173535419_Preview.jpeg",
+        },
+        {
+          id: 19,
+          name: "Saffron Amber",
+          description:
+            "Captivating blend of saffron and amber notes, creating an enticing and alluring atmosphere.",
+          category: "bakhoor",
+          price: "₹1800",
+          previousprice: "₹3000",
+          image:
+            "pics/Bakhoor/240_F_140258069_K60BKIVFfISApDb7a0ZCmPCwJjndeH5o.jpg",
+        },
+        {
+          id: 20,
+          name: "Rose Oud Bakhoor",
+          description:
+            "Combination of rose essence and oud wood, offering a delicate yet potent floral fragrance.",
+          category: "bakhoor",
+          price: "₹2200",
+          previousprice: "₹3000",
+          image: "pics/Bakhoor/AdobeStock_745161057_Preview.jpeg",
+        },
+        {
+          id: 21,
+          name: "Musk Oud Bakhoor",
+          description:
+            "Musk-infused oud wood with a musky, sensual aroma that lingers and captivates the senses.",
+          category: "bakhoor",
+          price: "₹2100",
+          previousprice: "₹3000",
+          image: "pics/Bakhoor/AdobeStock_549362914_Preview.jpeg",
+        },
+
+        {
+          id: 22,
+          name: "Arabian Nights",
+          description:
+            "A mesmerizing blend of oud, spices, and florals, evoking the enchanting atmosphere of Arabian nights.",
+          category: "perfume",
+          price: "₹3000",
+          previousprice: "₹4000",
+          image: "pics/perfumes/arabian knight.png",
+        },
+        {
+          id: 23,
+          name: "Sultan's Oud",
+          description:
+            "Regal and sophisticated, Sultan's Oud combines rich oud with hints of leather and tobacco for a luxurious fragrance.",
+          Sub: "bestseller",
+          category: "perfume",
+          price: "₹3500",
+          previousprice: "₹4000",
+          image: "pics/perfumes/prfme.jpeg",
+        },
+        {
+          id: 24,
+          name: "Oud Royale",
+          description:
+            "Exquisite and refined, Oud Royale features the finest oud wood with a touch of saffron and ambergris.",
+          category: "perfume",
+          price: "₹4000",
+          previousprice: "₹4500",
+          image: "pics/perfumes/8a0a004b-8c4c-4911-ab12-788be268b5db.jpeg",
+        },
+        {
+          id: 25,
+          name: "Oud Musk",
+          description:
+            "A captivating blend of musk and oud, creating a sensual and long-lasting fragrance that lingers on the skin.",
+          category: "perfume",
+          price: "₹2800",
+          previousprice: "₹3000",
+          image: "pics/perfumes/AdobeStock_683344921_Preview.jpeg",
+        },
+        {
+          id: 26,
+          name: "Golden Oud",
+          description:
+            "Radiant and opulent, Golden Oud combines precious oud with golden spices and floral notes",
+          Sub: "bestseller",
+          category: "perfume",
+          price: "₹3200",
+          previousprice: "₹3500",
+          image:
+            "pics/perfumes/image_fx_attar_oud_perfume_image_950_px_width__530px.jpg",
+        },
+        {
+          id: 27,
+          name: "Arabian Rose Oud",
+          description:
+            "A delicate fusion of rose petals and oud wood, creating a romantic and enchanting floral oud fragrance.",
+          Sub: "bestseller",
+          category: "perfume",
+          price: "₹2700",
+          previousprice: "₹3000",
+          image: "pics/perfumes/AdobeStock_571385880_Preview-transformed.jpeg",
+        },
+        {
+          id: 28,
+          name: "Woody Intense",
+          description:
+            "A mix of Heliotrope and Rosemary with Guernium and Cardamom to embrace Vanilla and Patchouli mixed with musk",
+          category: "perfume",
+          price: "₹4000",
+          previousprice: "₹3000",
+          image: "pics/perfumes/Woody_collection.jpg",
+        },
+        {
+          id: 29,
+          name: "Oud Noir",
+          description:
+            "A dark and mysterious fragrance, Oud Noir combines oud with deep spices and a hint of patchouli for an intense aroma.",
+          category: "perfume",
+          price: "₹2900",
+          previousprice: "₹3000",
+          image: "pics/perfumes/DeWatermark.ai_1712133733646.png",
+        },
+        {
+          id: 30,
+          name: "Oud Divine",
+          description:
+            "Oud Divine offers a divine blend of oud and vanilla, creating a warm and comforting fragrance.",
+          category: "perfume",
+          price: "₹3100",
+          previousprice: "₹5000",
+          image: "pics/perfumes/DeWatermark.ai_1712133585488.png",
+        },
+        {
+          id: 31,
+          name: "Incense Burner Silver",
+          description:
+            "Luxurious silver burner designed specifically for burning oud incense, creating an opulent ambiance.",
+          category: "burner",
+          price: "₹500",
+          previousprice: "₹3000",
+          image: "pics/Burners/DeWatermark.ai_1712139255406.png",
+        },
+        {
+          id: 32,
+          name: "Brass Burner",
+          description:
+            "Handcrafted brass incense burner with intricate designs, perfect for burning various types of incense.",
+          category: "burner",
+          price: "₹800",
+          previousprice: "₹1000",
+          image: "pics/Burners/DeWatermark.ai_1712139268976.png",
+        },
+        {
+          id: 33,
+          name: "Wooden Burner",
+          description:
+            "Hand-carved oud wood burner with intricate patterns, perfect for enhancing the aroma of your oud incense.",
+          Sub: "bestseller",
+          category: "burner",
+          price: "₹1200",
+          previousprice: "₹3000",
+          image: "pics/Burners/DeWatermark.ai_1712139299237.png",
+        },
+        {
+          id: 34,
+          name: "Oud Burner Set",
+          description:
+            "Modern oud burner set with multiple compartments for burning different types of oud incense",
+
+          category: "burner",
+          price: "₹1500",
+          previousprice: "₹3000",
+          image: "pics/Burners/AdobeStock_703865140_Preview.jpeg",
+        },
+        {
+          id: 35,
+          name: "Marble Stone Burner",
+          description:
+            "High-quality marble burner designed to complement the rich aroma of oud incense, adding a touch of sophistication",
+          category: "burner",
+          price: "₹2000",
+          previousprice: "₹3000",
+          image: "pics/Burners/AdobeStock_74300744_Preview.jpeg",
+        },
+        {
+          id: 36,
+          name: "Electric Burner",
+          description:
+            "Wireless Portable Rechargeable Electric Portable Bakhoor Burner for cars with Electric Backflow Incense Burner Portable",
+          category: "burner",
+          price: "₹1995",
+          previousprice: "₹3000",
+          image:
+            "pics/Burners/WhatsAppImage2023-07-18at4.44.22PM_1024x1024@2x.webp",
+        },
+        {
+          id: 37,
+          name: "",
+          description: "",
+          category: "",
+          price: "₹",
+          previousprice: "₹",
+          image: "",
+        },
+      ];
+
+      var productContainer = document.querySelector(".bestsellers");
+
+      productArray.forEach((ele) => {
+        var card = document.createElement("div");
+        var img = document.createElement("img");
+        var innerDiv = document.createElement("div");
+        var descrpDiv = document.createElement("div");
+        var heading = document.createElement("h4");
+        var descrp = document.createElement("p");
+        var button = document.createElement("a");
+
+        card.setAttribute("class", "card me-0");
+        //card.getAttribute('class','card');
+        img.setAttribute("class", "card-img-top img-fluid");
+        descrpDiv.setAttribute("class", "card-body text-center");
+        heading.setAttribute("class", "card-title");
+        descrp.setAttribute("class", "card-text");
+        button.setAttribute("class", "btn  mt-3");
+
+        if (ele.Sub == "bestseller") {
+          img.src = ele.image;
+          heading.innerHTML = ele.name;
+          descrp.innerHTML = ele.description;
+          button.innerHTML = "View Details";
+
+          //descrpDiv.appendChild(heading);
+          innerDiv.appendChild(heading);
+          innerDiv.appendChild(descrp);
+          descrpDiv.appendChild(innerDiv);
+          descrpDiv.appendChild(button);
+                                    
+          card.appendChild(img);
+          card.appendChild(descrpDiv);
+
+          productContainer.appendChild(card);
+
+          button.addEventListener("click", (e) => {
+            window.location.href = `Productpage.html?id=${ele.id}`;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- For "Caption 2":
+1. "Enchanting aromas that captivate the senses"
+2. "Embrace the luxury of our exclusive fragrances"
+3. "Indulge in the essence of elegance and charm"
+
+For "Caption 3":
+1. "Discover the allure of Arabian oud and bakhoor"
+2. "Awaken your senses to the richness of tradition"
+3. "Immerse yourself in the magic of oriental scents" -->

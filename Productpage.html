@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background-color: ivory;
+    }
+    .navbar {
+      z-index: 1;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      font-size: larger;
+    }
+    .navbar-brand {
+      font-family: "Cinzel Decorative", cursive;
+      color: burlywood;
+      font-size: 40px;
+    }
+    .navbar ul a {
+      font-size: 20px;
+      margin: 5px;
+    }
+    .custom-navbar {
+      margin-left: auto;
+    }
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .product {
+      margin-top: 150px;
+      /*  border: 1px solid black;*/
+      margin-bottom: 100px;
+    }
+    .img {
+      max-width: 570px;
+      height: 480px;
+    }
+
+    /* .product-description{
+      border:1px solid black;
+    }*/
+    .button {
+      background-color: #bc8b57;
+      width: 245px;
+      height: 50px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      color: antiquewhite;
+    }
+    .button:hover {
+      background-color: #8f663d;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="pics/oudlogo.png" alt="logo" height="65px" width="70px" />
+          Arabian Oud</a
+        >
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-label="Expand Navigation"
+        >
+          <div class="navbar-toggler-icon" id="nav"></div>
+        </button>
+        <div class="collapse navbar-collapse bg-dark" id="nav">
+          <ul class="navbar-nav custom-navbar">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="store.html" class="nav-link active"> Store </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link"> About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contactus.html" class="nav-link"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="Parent container d-flex product px-0 mx-3">
+      <!-- <div class="image mx-3">
+        <img
+          src="pics/perfumes/AdobeStock_473803125_Preview-transformed.jpeg"
+          class="img border"
+          alt="product"
+        />
+      </div>
+
+      <div class="product-description w-100 px-3">
+        <h1 class="caption mt-2 mb-5 ms-1">product heading</h1>
+        <span class="lead text-decoration-line-through ms-2 me-3"> ₹2000 </span>
+        <span class="lead fs-2 fw-medium">₹2000 </span>
+        <hr class="mt-5" />
+        <h4 class="lead mt-4 fst-italic mb-4">
+          description Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quas consectetur eius illum?
+        </h4>
+        <hr class="mt-5" />
+        <button class="mt-3">ADD TO CART</button>
+        <button class="mt-3">BUY NOW</button>
+      </div> -->
+    </div>
+
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 ms-2">
+            <h4>
+              <a href="aboutus.html" style="text-decoration: none; color: white"
+                >About Us</a
+              >
+            </h4>
+            <p>
+              Discover exquisite Arabian Oud fragrances at Arabian Oud. With a
+              commitment to quality and elegance, we bring you an exclusive
+              range of oud oils, perfumes, and more, crafted with precision and
+              care. Experience luxury, elegance, and timeless scents like never
+              before with Arabian Oud
+            </p>
+          </div>
+
+          <div class="col-md-3 ms-2">
+            <h4>
+              <a
+                href="contactus.html"
+                style="text-decoration: none; color: white"
+                >Contact Us</a
+              >
+            </h4>
+            <ul class="list-unstyled">
+              <li class="mb-1">Email: bilalahmad9875@gmail.com</li>
+              <li class="mb-1">Phone: +91-7895224673</li>
+              <li class="mb-1">Address: Marris Road, Aligarh , UP</li>
+            </ul>
+          </div>
+          <div class="col-md-3 ms-2">
+            <h4>Follow Us</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/"
+                  style="text-decoration: none; color: rgb(24, 119, 242)"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://twitter.com/"
+                  style="text-decoration: none; color: rgb(29 161 242)"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/"
+                  style="text-decoration: none; color: rgb(193, 53, 132)"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://in.linkedin.com/"
+                  style="text-decoration: none; color: rgb(0, 119, 181)"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- #2f55a4 -->
+          <hr />
+          <div class="text-center">
+            <p>&copy; 2024 Arabian Oud. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const url = window.location.search;
+        const urlParams = new URLSearchParams(url);
+        const ids = parseInt(urlParams.get("id"));
+
+        const productArray = [
+        {  
+          id:1,
+          name: "Musk",
+          description: "Sticky Musk , long lasting notes ,light fragrance ",
+          price: "₹2000",
+          previousprice:"₹3000",
+          category: "oil",
+          image: "pics/AdobeStock_552679291_Preview.jpeg",
+        },
+        { id:2,
+          name: "Oud Malaki",
+          description: "Royal Oud takes you back to the Arabian knights",
+          price: "₹2000",
+          previousprice:"₹3000",
+          category: "oil",
+          image: "pics/image_fx_attar_oud_oil_image__950_px_width__530px_he (5).jpg",
+        },
+      
+        {  
+          id:3,
+          name: "Musk Rose Pink",
+          description: "Royal Musk takes you back to the Arabian knights",
+          Sub: "bestseller",
+          price: "₹1000",
+          previousprice:"₹2000",
+          category: "oil",
+          image: "pics/oils/muskpink.jpeg",
+        },
+        { 
+          id:4,
+          name: "Rose Oil",
+          description:
+            "Experience the timeless elegance of Rose with this exquisite scent ",
+          price: "₹750",
+          previousprice:"₹1000",
+          category: "oil",
+          image: "pics/oils/image_fx_attar_oud_oil_image__950_px_width__530px_he.jpg",
+        },
+      
+        { id:5, 
+          name: "Oud Cambodi",
+          description: "Exotic Cambodian oud with deep woody tones",
+          Sub: "bestseller",
+          price: "₹2500",
+          category: "oil",
+          previousprice:"₹3000",
+          image: "pics/oils/AdobeStock_196059371_Preview.jpeg",
+        },
+        { id:6,
+          name: "Oud Saffron",
+          description:
+            "Luxurious saffron-infused oud for a rich fragrance experience",
+          price: "₹2200",
+          previousprice:"₹3500",
+          category: "oil",
+          image: "pics/oils/banner4.jpeg",
+        },
+        { 
+          id:7,
+          name: "Oud Rose",
+          description: "Elegant blend of oud and rose petals for a floral oud scent",
+          price: "₹2300",
+          previousprice:"₹3600",
+          category: "oil",
+          image: "pics/oils/240_F_234927522_Ej2COntDR8MjCSUJGFHm6qdLpn2Qxqe1.jpg",
+        },
+        { 
+          id:8,
+          name: "Oud Amber",
+          description: "Warm amber notes combined with oud for a captivating aroma",
+          price: "₹2400",
+          previousprice:"₹3000",
+          category: "oil",
+          image:
+            "pics/oils/image_fx_attar_oud_perfume_banner_image_landscape_mod.jpg",
+        },
+        {
+          id:9,
+          name: "Oud Vanilla",
+          description: "Vanilla-infused oud with a sweet and comforting fragrance",
+          price: "₹2100",
+          previousprice:"₹3000",
+          category: "oil",
+          image: "pics/oils/AdobeStock_235631572_Preview.jpeg",
+        },
+        { 
+          id:10,
+          name: "Dehn Al Oud Hindi",
+          description:
+            "Rich and aromatic fragrance crafted from the finest Hindi Oud Wood",
+          price: "₹2000",
+          previousprice:"₹3000",
+          category: "oil",
+          image: "pics/oils/DeWatermark.ai_1712134307112.png",
+        },
+      
+        { 
+          id:11,
+          name: "Madinah Musk",
+          description:
+            "Luxurious French oils mixed with roses and drops of Zamzam water",
+          price: "₹1300",
+          previousprice:"₹3000",
+          category: "oil",
+          image: "pics/oils/MADINAH MUSK.jpg",
+        },
+        { 
+          id:12,
+          name: "Kashab Al Oud",
+          description:
+            "A captivating blend of rich woody notes, deep earthy tones, and a hint of musk",
+          category: "oil",
+          price: "₹1500",
+          previousprice:"₹3000",
+          image: "pics/oils/240_F_203773123_7xas1FYYN1M63h3zSH3to6mCnk1SvGKs.jpg",
+        },
+        { 
+          id:13,
+          name: "Mukhallat Oud",
+          description:
+            "The strongest type of Oud, makes your scent luxurious and authentic ",
+            Sub: "bestseller",
+          category: "oil",
+          price: "₹1300",
+          previousprice:"₹3000",
+          image: "pics/AdobeStock_181095222_Preview.jpeg",
+        },
+        { 
+          id:14,
+          name: "Madawi",
+          description:
+            "The aromatic bouquet of fruits, base of roses, patchouli and musk",
+          category: "oil",
+          price: "₹3000",
+          previousprice:"₹3000",
+          image:
+            "pics/oils/image_fx_attar_oud_perfume_image_950_px_width__530px (2).jpg",
+        },
+        { 
+          id:15, 
+          name: "Amber Zamzam",
+          description:
+            "Oil with the luxury of musk added to it drops of Zamzam water.",
+          category: "oil",
+          price: "₹1400",
+          previousprice:"₹3000",
+          image: "pics/oils/amber zamazam.jpeg",
+        },
+        { 
+          id:16, 
+          name: "Bakhoor Ahmad",
+          description:
+            " Smoky woodiness of the scent, the warm amber, incense, and sandalwood ",
+          Sub: "bestseller",
+          category: "bakhoor",
+          price: "₹1000",
+          previousprice:"₹3000",
+          image: "pics/Bakhoor/AdobeStock_517533453_Preview.jpeg",
+        },
+        { 
+          id:17,
+          name: "Indian Oud Wood",
+          description:
+            "Derived from the resinous heartwood of agarwood trees native to India",
+          category: "bakhoor",
+          price: "₹2000",
+          previousprice:"₹3000",
+          image: "pics/Bakhoor/AdobeStock_517533399_Preview.jpeg",
+        },
+        { 
+          id:18,
+          name: "Cambodian Wood",
+          description:
+            "Wood from the heart of Cambodia, rich in terpenes and fragrance",
+          category: "bakhoor",
+          price: "₹2500",
+          previousprice:"₹3000",
+          image: "pics/Bakhoor/AdobeStock_173535419_Preview.jpeg",
+        },
+        { 
+          id:19,
+          name: "Saffron Amber",
+          description:
+            "Captivating blend of saffron and amber notes, creating an enticing and alluring atmosphere.",
+          category: "bakhoor",
+          price: "₹1800",
+          previousprice:"₹3000",
+          image: "pics/Bakhoor/240_F_140258069_K60BKIVFfISApDb7a0ZCmPCwJjndeH5o.jpg",
+        },
+        {
+          id:20,
+          name: "Rose Oud Bakhoor",
+          description:
+            "Combination of rose essence and oud wood, offering a delicate yet potent floral fragrance.",
+          category: "bakhoor",
+          price: "₹2200",
+          previousprice:"₹3000",
+          image: "pics/Bakhoor/AdobeStock_745161057_Preview.jpeg",
+        },
+        { 
+          id:21,
+          name: "Musk Oud Bakhoor",
+          description:
+            "Musk-infused oud wood with a musky, sensual aroma that lingers and captivates the senses.",
+          category: "bakhoor",
+          price: "₹2100",
+          previousprice:"₹3000",
+          image: "pics/Bakhoor/AdobeStock_549362914_Preview.jpeg",
+        },
+      
+        { 
+          id:22,
+          name: "Arabian Nights",
+          description:
+            "A mesmerizing blend of oud, spices, and florals, evoking the enchanting atmosphere of Arabian nights.",
+          category: "perfume",
+          price: "₹3000",
+          previousprice:"₹4000",
+          image: "pics/perfumes/arabian knight.png",
+        },
+        { 
+          id:23,
+          name: "Sultan's Oud",
+          description:
+            "Regal and sophisticated, Sultan's Oud combines rich oud with hints of leather and tobacco for a luxurious fragrance.",
+            Sub: "bestseller",
+          category: "perfume",
+          price: "₹3500",
+          previousprice:"₹4000",
+          image: "pics/perfumes/prfme.jpeg",
+        },
+        { 
+          id:24,
+          name: "Oud Royale",
+          description:
+            "Exquisite and refined, Oud Royale features the finest oud wood with a touch of saffron and ambergris.",
+          category: "perfume",
+          price: "₹4000",
+          previousprice:"₹4500",
+          image: "pics/perfumes/8a0a004b-8c4c-4911-ab12-788be268b5db.jpeg",
+        },
+        { 
+          id:25, 
+          name: "Oud Musk",
+          description:
+            "A captivating blend of musk and oud, creating a sensual and long-lasting fragrance that lingers on the skin.",
+          category: "perfume",
+          price: "₹2800",
+          previousprice:"₹3000",
+          image: "pics/perfumes/AdobeStock_683344921_Preview.jpeg",
+        },
+        { 
+          id:26,
+          name: "Golden Oud",
+          description:
+            "Radiant and opulent, Golden Oud combines precious oud with golden spices and floral notes",
+            Sub: "bestseller",
+          category: "perfume",
+          price: "₹3200",
+          previousprice:"₹3500",
+          image:
+            "pics/perfumes/image_fx_attar_oud_perfume_image_950_px_width__530px.jpg",
+        },
+        { 
+          id:27,
+          name: "Arabian Rose Oud",
+          description:
+            "A delicate fusion of rose petals and oud wood, creating a romantic and enchanting floral oud fragrance.",
+            Sub: "bestseller",
+          category: "perfume",
+          price: "₹2700",
+          previousprice:"₹3000",
+          image: "pics/perfumes/AdobeStock_571385880_Preview-transformed.jpeg",
+        },
+        { 
+          id:28,
+          name: "Woody Intense",
+          description:
+            "A mix of Heliotrope and Rosemary with Guernium and Cardamom to embrace Vanilla and Patchouli mixed with musk",
+          category: "perfume",
+          price: "₹4000",
+          previousprice:"₹3000",
+          image: "pics/perfumes/Woody_collection.jpg",
+        },
+        { 
+          id:29,
+          name: "Oud Noir",
+          description:
+            "A dark and mysterious fragrance, Oud Noir combines oud with deep spices and a hint of patchouli for an intense aroma.",
+          category: "perfume",
+          price: "₹2900",
+          previousprice:"₹3000",
+          image: "pics/perfumes/DeWatermark.ai_1712133733646.png",
+        },
+        { 
+          id:30,
+          name: "Oud Divine",
+          description:
+            "Oud Divine offers a divine blend of oud and vanilla, creating a warm and comforting fragrance.",
+          category: "perfume",
+          price: "₹3100",
+          previousprice:"₹5000",
+          image: "pics/perfumes/DeWatermark.ai_1712133585488.png",
+        },
+        { 
+          id:31,
+          name: "Incense Burner Silver",
+          description: "Luxurious silver burner designed specifically for burning oud incense, creating an opulent ambiance.",
+          category: "burner",
+          price: "₹500",
+          previousprice:"₹3000",
+          image: "pics/Burners/DeWatermark.ai_1712139255406.png",
+        },
+        {  
+          id:32,
+          name: "Brass Burner",
+          description: "Handcrafted brass incense burner with intricate designs, perfect for burning various types of incense.",
+          category: "burner",
+          price: "₹800",
+          previousprice:"₹1000",
+          image: "pics/Burners/DeWatermark.ai_1712139268976.png",
+        },
+        { 
+          id:33,
+          name: "Wooden Burner",
+          description: "Hand-carved oud wood burner with intricate patterns, perfect for enhancing the aroma of your oud incense.",
+          Sub: "bestseller",
+          category: "burner",
+          price: "₹1200",
+          previousprice:"₹3000",
+          image: "pics/Burners/DeWatermark.ai_1712139299237.png",
+        },
+        { 
+          id:34,
+          name: "Oud Burner Set",
+          description: 'Modern oud burner set with multiple compartments for burning different types of oud incense',
+      
+          category: "burner",
+          price: "₹1500",
+          previousprice:"₹3000",
+          image: "pics/Burners/AdobeStock_703865140_Preview.jpeg",
+        },
+        { 
+          id:35,
+          name: "Marble Stone Burner",
+          description: "High-quality marble burner designed to complement the rich aroma of oud incense, adding a touch of sophistication",
+          category: "burner",
+          price: "₹2000",
+          previousprice:"₹3000",
+          image: "pics/Burners/AdobeStock_74300744_Preview.jpeg",
+        },
+        { 
+          id:36,
+          name: "Electric Burner",
+          description: "Wireless Portable Rechargeable Electric Portable Bakhoor Burner for cars with Electric Backflow Incense Burner Portable",
+          category: "burner",
+          price: "₹1995",
+          previousprice:"₹3000",
+          image: "pics/Burners/WhatsAppImage2023-07-18at4.44.22PM_1024x1024@2x.webp",
+        },
+        { 
+          id:37,
+          name: "",
+          description: "",
+          category: "",
+          price: "₹",
+          previousprice:"₹",
+          image: "",
+        },
+      ];
+      
+        const product = productArray.find((item) => item.id === ids);
+
+        var parent = document.querySelector(".Parent");
+        var imgdiv = document.createElement("div");
+        var img = document.createElement("img");
+        var productdiv = document.createElement("div");
+        var productheading = document.createElement("h1");
+        var productDescription = document.createElement("h4");
+        var prevprice = document.createElement("span");
+        var price = document.createElement("span");
+        var button1 = document.createElement("button");
+        var button2 = document.createElement("button");
+        var hrz = document.createElement("hr");
+        var hrz1 = document.createElement("hr");
+
+        imgdiv.setAttribute("class", "image mx-3");
+        img.setAttribute("class", "img border");
+        prevprice.setAttribute(
+          "class",
+          "lead text-decoration-line-through ms-2 me-3"
+        );
+        price.setAttribute("class", "lead  fs-2 fw-medium");
+        productdiv.setAttribute("class", "product-description w-100 px-3");
+        productheading.setAttribute("class", "caption mt-2 mb-5 ms-1");
+        productDescription.setAttribute("class", "lead mt-4 fst-italic mb-4");
+        button1.setAttribute("class", "mt-3 me-3");
+        button1.classList.add("button");
+        button2.setAttribute("class", "mt-3");
+        button2.classList.add("button");
+        hrz.setAttribute("class", "mt-5");
+        hrz1.setAttribute("class", "mt-5");
+        //Adding data to the elements
+
+        img.src = product.image;
+        productheading.textContent = product.name;
+        productDescription.textContent = product.description;
+        prevprice.textContent = product.previousprice;
+        price.textContent = product.price;
+        button1.textContent = "ADD TO CART";
+        button2.textContent = "BUY NOW";
+
+        imgdiv.appendChild(img);
+        productdiv.appendChild(productheading);
+        productdiv.appendChild(prevprice);
+        productdiv.appendChild(price);
+        productdiv.appendChild(hrz);
+        productdiv.appendChild(productDescription);
+        productdiv.appendChild(hrz1);
+        productdiv.appendChild(button1);
+        productdiv.appendChild(button2);
+
+        parent.appendChild(imgdiv);
+        parent.appendChild(productdiv);
+
+        //urlParams.get("id");
+        console.log(id);
+      });
+    </script>
+  </body>
+</html>
